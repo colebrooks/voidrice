@@ -223,3 +223,15 @@ set clipboard=unnamedplus
 """.xml
 	autocmd FileType xml inoremap ,e <item><Enter><title><++></title><Enter><guid<space>isPermaLink="false"><++></guid><Enter><pubDate><Esc>:put<Space>=strftime('%a, %d %b %Y %H:%M:%S %z')<Enter>kJA</pubDate><Enter><link><++></link><Enter><description><![CDATA[<++>]]></description><Enter></item><Esc>?<title><enter>cit
 	autocmd FileType xml inoremap ,a <a href="<++>"><++></a><++><Esc>F"ci"
+
+"""C, C++
+	autocmd Filetype c,cpp setlocal nowrap
+	autocmd Filetype c,cpp setlocal expandtab
+	autocmd Filetype c,cpp setlocal softtabstop=4
+	autocmd Filetype c,cpp setlocal shiftwidth=4
+	autocmd Filetype c,cpp setlocal backspace=indent,eol,start
+	autocmd Filetype c,cpp setlocal hlsearch
+	autocmd Filetype c,cpp setlocal incsearch
+	autocmd Filetype c,cpp setlocal ignorecase
+	autocmd Filetype c,cpp setlocal smartcase
+
