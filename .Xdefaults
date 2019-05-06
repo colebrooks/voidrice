@@ -2,7 +2,7 @@
 st.alpha: 240
 
 !! Set a default font and font size as below:
-st.font: Monospace-11;
+st.font: Monospace-12;
 
 /* !! gruvbox: */
 /* *.color0: #1d2021
