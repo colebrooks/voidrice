@@ -153,6 +153,9 @@ set clipboard=unnamedplus
 	autocmd FileType tex inoremap ,rn (\ref{})<++><Esc>F}i
 
 """HTML
+	autocmd Filetype html,css setlocal expandtab
+	autocmd Filetype html,css setlocal softtabstop=4
+	autocmd Filetype html,css setlocal shiftwidth=4
 	autocmd FileType html inoremap ,b <b></b><Space><++><Esc>FbT>i
 	autocmd FileType html inoremap ,it <em></em><Space><++><Esc>FeT>i
 	autocmd FileType html inoremap ,1 <h1></h1><Enter><Enter><++><Esc>2kf<i
