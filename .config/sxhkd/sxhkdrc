@@ -22,9 +22,9 @@ super + shift + c
 super + shift + e
 	tutorialvids
 super + w
-	webby | xargs -r $BROWSER
-super + shift + w
 	$BROWSER
+super + shift + w
+	webby | xargs -r $BROWSER
 super + shift + g
 	gimp
 
