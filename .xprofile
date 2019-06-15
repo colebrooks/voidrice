@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xrdb .Xdefaults 	# Set the color scheme defined in .Xdefaults
 setbg &		# Set the background
 sxhkd &	# Bind keys
 # Switch to US international with Caps as Mod/Escape
