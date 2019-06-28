@@ -43,6 +43,33 @@ super + x
 	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
 XF86Launch1
 	xset dpms force off
+XF86AudioMute
+	lmc mute
+XF86AudioLowerVolume
+	lmc down 5
+shift+XF86AudioLowerVolume
+	lmc down 10
+control+XF86AudioLowerVolume
+	lmc down 1
+XF86AudioRaiseVolume
+	lmc up 5
+shift+XF86AudioRaiseVolume
+	lmc up 10
+control+XF86AudioRaiseVolume
+	lmc up 1
+XF86AudioNext
+	lmc next
+XF86AudioPlay
+	lmc toggle
+XF86AudioPrev
+	lmc prev
+XF86AudioStop
+	lmc toggle
+XF86MonBrightnessDown
+	xbacklight -dec 15
+XF86MonBrightnessUp
+	xbacklight -inc 15
+
 
 # Recording
 # Take screenshot
@@ -79,18 +106,6 @@ super + {_,shift +} bracketright
 # Seek backward in song
 super + {_,shift +} bracketleft
 	lmc back {10,120}
-
-# General bindings for audio control buttons. You might also want
-# to specify your @DEFAULT_SINK@ in /etc/pulse/default.pa
-# Mute volume
-XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
-# Decrease volume
-XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -5%
-# Increase volume
-XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +5%
 
 # Function keys
 # Show readme
