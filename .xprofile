@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 xrdb .Xdefaults 	# Set the color scheme defined in .Xdefaults
 setbg &		# Set the background
