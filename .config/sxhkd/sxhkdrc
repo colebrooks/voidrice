@@ -24,7 +24,7 @@ super + shift + e
 super + w
 	$BROWSER
 super + shift + w
-	webby | xargs -r $BROWSER
+	nmtui
 super + shift + g
 	gimp
 
