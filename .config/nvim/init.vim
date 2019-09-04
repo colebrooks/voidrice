@@ -237,3 +237,14 @@ set clipboard+=unnamedplus
 	autocmd Filetype c,cpp setlocal incsearch
 	autocmd Filetype c,cpp setlocal ignorecase
 	autocmd Filetype c,cpp setlocal smartcase
+
+""" R
+	autocmd Filetype r,R setlocal nowrap
+	autocmd Filetype r,R setlocal expandtab
+	autocmd Filetype r,R setlocal softtabstop=4
+	autocmd Filetype r,R setlocal shiftwidth=4
+	autocmd Filetype r,R setlocal backspace=indent,eol,start
+	autocmd Filetype r,R setlocal hlsearch
+	autocmd Filetype r,R setlocal incsearch
+	autocmd Filetype r,R setlocal ignorecase
+	autocmd Filetype r,R setlocal smartcase
