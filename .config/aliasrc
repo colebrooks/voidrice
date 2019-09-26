@@ -27,7 +27,8 @@ alias ka="killall" \
 	ffmpeg="ffmpeg -hide_banner" \
 	r="vifm" \
 	R="R --quiet" \
-	cc="clear"
+	cc="clear" \
+	dum="cd ~/Documents/Undergraduate/UM-Fall-2019/; r"
 
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.

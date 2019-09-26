@@ -20,11 +20,11 @@ super + shift + a
 super + shift + c
 	camtoggle
 super + shift + e
-	tutorialvids
+	emacs
 super + w
 	$BROWSER
 super + shift + w
-	nmtui
+	$TERMINAL -e nmtui
 super + shift + g
 	gimp
 
