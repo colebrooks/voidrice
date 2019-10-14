@@ -6,7 +6,7 @@ super + d
 super + r
 	$TERMINAL -e $FILE
 super + e
-	$TERMINAL -e neomutt
+	emacs
 super + m
 	$TERMINAL -e ncmpcpp
 super + n
@@ -20,7 +20,7 @@ super + shift + a
 super + shift + c
 	camtoggle
 super + shift + e
-	emacs
+	$TERMINAL -e neomutt
 super + w
 	$BROWSER
 super + shift + w

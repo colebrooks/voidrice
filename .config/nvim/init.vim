@@ -156,11 +156,6 @@ set clipboard+=unnamedplus
 	autocmd FileType tex inoremap ,col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 	autocmd FileType tex inoremap ,rn (\ref{})<++><Esc>F}i
 
-	autocmd Filetype tex setlocal expandtab
-	autocmd Filetype tex setlocal softtabstop=4
-	autocmd Filetype tex setlocal shiftwidth=4
-	autocmd Filetype tex setlocal backspace=indent,eol,start
-
 """HTML
 	autocmd Filetype html,css setlocal expandtab
 	autocmd Filetype html,css setlocal softtabstop=4
