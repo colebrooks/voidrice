@@ -155,6 +155,7 @@ set clipboard+=unnamedplus
 	autocmd FileType tex inoremap ,nu $\varnothing$
 	autocmd FileType tex inoremap ,col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 	autocmd FileType tex inoremap ,rn (\ref{})<++><Esc>F}i
+	autocmd FileType tex inoremap ,se \begin{equation*}<Enter>\begin{split}<Enter><Enter>\end{split}<Enter>\end{equation*}<Esc>2kA
 
 """HTML
 	autocmd Filetype html,css setlocal expandtab
