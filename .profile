@@ -12,7 +12,7 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
 export READER="zathura"
-export FILE="ranger"
+export FILE="vifm"
 export STATUSBAR="${LARBSWM}blocks"
 
 # ~/ Clean-up:

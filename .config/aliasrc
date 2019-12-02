@@ -35,7 +35,7 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	r="ranger" \
+	r="vifm" \
 	dum="cd ~/Documents/Undergraduate/UM-Fall-2019/; r"
 
 # This alias is important. It enables the `pauseallmpv` command.
