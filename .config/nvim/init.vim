@@ -120,7 +120,7 @@ set clipboard+=unnamedplus
 	autocmd FileType tex inoremap ,em \emph{}<++><Esc>T{i
 	autocmd FileType tex inoremap ,bf \textbf{}<++><Esc>T{i
 	autocmd FileType tex vnoremap , <ESC>`<i\{<ESC>`>2la}<ESC>?\\{<Enter>a
-	autocmd FileType tex inoremap ,it \textit{}<++><Esc>T{i
+	autocmd FileType tex inoremap ,it \textit{}<Esc>T{i
 	autocmd FileType tex inoremap ,ct \textcite{}<++><Esc>T{i
 	autocmd FileType tex inoremap ,cp \parencite{}<++><Esc>T{i
 	autocmd FileType tex inoremap ,glos {\gll<Space><++><Space>\\<Enter><++><Space>\\<Enter>\trans{``<++>''}}<Esc>2k2bcw
