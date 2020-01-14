@@ -36,7 +36,7 @@ alias \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
 	r="vifm" \
-	dum="cd ~/Documents/Undergraduate/UM-Fall-2019/; r"
+	dm="cd ~/Documents/Undergraduate/MSU-Spring-2020/; r"
 
 # This alias is important. It enables the `pauseallmpv` command.
 alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)"
