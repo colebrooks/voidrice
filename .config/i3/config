@@ -26,6 +26,8 @@ for_window [instance="dropdown_dropdowncalc"] border pixel 2
 for_window [instance="dropdown_*"] move position center
 
 # KeePassXC autostart on workspace 9
+exec --no-startup-id i3-msg 'workspace 1; exec firefox'
+exec --no-startup-id i3-msg 'workspace 2; exec emacs'
 exec --no-startup-id i3-msg 'workspace 9; exec keepassxc'
 
 bar {
