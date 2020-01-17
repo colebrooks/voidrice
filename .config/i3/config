@@ -26,16 +26,19 @@ for_window [instance="dropdown_dropdowncalc"] border pixel 2
 for_window [instance="dropdown_*"] move position center
 
 # Programs to autostart on login
-
 exec --no-startup-id i3-msg 'workspace 1; exec firefox, workspace 2; exec emacs, workspace 9; exec keepassxc'
  
-bar {
-	font pango:mono 10
-	status_command i3blocks
-	position top
-	mode dock
-	modifier None
-}
+# i3blocks configuration
+# bar {
+# 	font pango:mono 10
+# 	status_command i3blocks
+# 	position top
+# 	mode dock
+# 	modifier None
+#}
+
+# polybar configuration
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # #---Basic Bindings---# #
 bindsym $mod+Shift+space 	floating toggle
