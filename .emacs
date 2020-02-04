@@ -22,7 +22,7 @@
 
 ;; EVIL mode configuration
 (require 'evil)
-  (evil-mode 1)
+  ;;(evil-mode 1)
 
 ;; Magit configuration
 (global-set-key (kbd "C-x g") 'magit-status)
