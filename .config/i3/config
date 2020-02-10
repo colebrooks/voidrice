@@ -71,11 +71,12 @@ bindsym $mod+Insert		exec --no-startup-id showclip
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
-bindsym $mod+w			exec $term -e nmtui
-bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
+bindsym $mod+w			exec --no-startup-id $BROWSER
+bindsym $mod+Shift+w		exec $term -e nmtui
 
-bindsym $mod+e			exec $term -e neomutt && pkill -RTMIN+12 i3blocks
-bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
+bindsym $mod+e			exec --no-startup-id emacs
+bindsym $mod+Shift+e		exec $term -e neomutt && pkill -RTMIN+12 i3blocks
+				#exec --no-startup-id tutorialvids
 
 bindsym $mod+r 			exec $term -e $FILE
 bindsym $mod+Shift+r		exec --no-startup-id winresize

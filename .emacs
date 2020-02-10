@@ -70,6 +70,10 @@
 ;; Tramp mode configuration
 (setq tramp-default-method "ssh")
 
+;; AUCTeX configuration
+(setq Tex-auto-save t)
+(setq Tex-parse-self t)
+
 ;; Set transparency
 (set-frame-parameter (selected-frame) 'alpha '(90 . 50))
 (add-to-list 'default-frame-alist '(alpha . (90 . 50)))
@@ -81,6 +85,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(TeX-view-program-selection
+   (quote
+    (((output-dvi has-no-display-manager)
+      "dvi2tty")
+     ((output-dvi style-pstricks)
+      "dvips and gv")
+     (output-dvi "xdvi")
+     (output-pdf "Zathura")
+     (output-html "xdg-open"))))
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
@@ -89,7 +102,7 @@
     ("~/Documents/Notepad.org" "~/Documents/Undergraduate/MSU-Spring-2020/Notes.org")))
  '(package-selected-packages
    (quote
-    (org-evil evil fill-column-indicator magit visual-fill-column use-package))))
+    (auctex org-evil evil fill-column-indicator magit visual-fill-column use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
