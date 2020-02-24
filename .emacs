@@ -20,14 +20,14 @@
 (use-package org
   :ensure t)
 
-;; EVIL mode configuration
-(require 'evil)
-  ;;(evil-mode 1)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Mode configuration
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Magit configuration
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;;;; Helm mode configuration
+;; Helm mode configuration
 (require 'helm-config)
 
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
@@ -54,6 +54,24 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
+;; Tramp mode configuration
+(setq tramp-default-method "ssh")
+
+;; AUCTeX configuration
+(setq Tex-auto-save t)
+(setq Tex-parse-self t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; General Emacs configuration
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Set transparency
+(set-frame-parameter (selected-frame) 'alpha '(90 . 50))
+(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
+
+;; show-paren-mode configuration
+(add-to-list 'auto-mode-alist '("\\.lisp$" . show-paren-mode))
+
 ;; Fill Column Indicator
 (require 'fill-column-indicator)
 
@@ -66,17 +84,6 @@
 ;; Open Notes.org on startup
 (setq inhibit-startup-screen t)
 (find-file "/home/cole/Documents/Undergraduate/MSU-Spring-2020/Notes.org")
-
-;; Tramp mode configuration
-(setq tramp-default-method "ssh")
-
-;; AUCTeX configuration
-(setq Tex-auto-save t)
-(setq Tex-parse-self t)
-
-;; Set transparency
-(set-frame-parameter (selected-frame) 'alpha '(90 . 50))
-(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -102,7 +109,7 @@
     ("~/Documents/Notepad.org" "~/Documents/Undergraduate/MSU-Spring-2020/Notes.org")))
  '(package-selected-packages
    (quote
-    (auctex org-evil evil fill-column-indicator magit visual-fill-column use-package))))
+    (auctex fill-column-indicator magit visual-fill-column use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
